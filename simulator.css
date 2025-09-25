@@ -1,0 +1,248 @@
+/* ===== БАЗОВЫЕ НАСТРОЙКИ ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0ff99;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ===== ГЛАВНАЯ СТРАНИЦА (С МЕНЮ) ===== */
+.menu {
+    font-size: 3rem; /* Вместо 95px - адаптивно */
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; /* Заменяет margin-top для li */
+}
+
+.menu li {
+    width: 100%;
+    max-width: 400px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1.5rem 2rem;
+    text-align: center;
+    background-color: #23ffa3;
+    color: #000000;
+    text-decoration: none;
+    border: 3px solid black;
+    font-size: 2rem;
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+.description {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem auto;
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+/* ===== СТРАНИЦА ТРЕНАЖЕРА ===== */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.counter_word {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: #333;
+}
+
+.counter_TF {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    color: #666;
+}
+
+.card {
+    background-color: #23ffa3;
+    border: 3px solid black;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 600px;
+}
+
+.word-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#english-word {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 3px solid black;
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#translation-input {
+    width: 100%;
+    max-width: 400px;
+    height: 60px;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#check-btn {
+    width: 100%;
+    max-width: 250px;
+    height: 60px;
+    font-size: 1.5rem;
+    background-color: #F8FF23;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#check-btn:active {
+    transform: scale(0.95);
+}
+
+/* ===== АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ ===== */
+@media (max-width: 768px) {
+    .menu {
+        font-size: 2rem;
+    }
+    
+    .button {
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+    }
+    
+    .description {
+        font-size: 1.2rem;
+    }
+    
+    .counter_word {
+        font-size: 2rem;
+    }
+    
+    #english-word {
+        font-size: 2.5rem;
+    }
+    
+    .card {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+}
+
+/* ===== ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ ===== */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .menu {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+    
+    .button {
+        font-size: 1.2rem;
+        padding: 0.8rem 1rem;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .counter_word {
+        font-size: 1.8rem;
+    }
+    
+    #english-word {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+    
+    #translation-input {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    #check-btn {
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
+
+/* ===== ДЛЯ ВАШЕГО ТЕЛЕФОНА 1080x2400 ===== */
+@media (min-width: 1000px) and (min-height: 2000px) {
+    body {
+        padding: 40px;
+    }
+    
+    .menu {
+        font-size: 4rem;
+        margin-top: 5rem;
+    }
+    
+    .button {
+        font-size: 3rem;
+        padding: 2rem 3rem;
+        max-width: 600px;
+    }
+    
+    .description {
+        font-size: 2.5rem;
+    }
+    
+    .counter_word {
+        font-size: 3.5rem;
+    }
+    
+    #english-word {
+        font-size: 4rem;
+    }
+    
+    #translation-input {
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    #check-btn {
+        height: 80px;
+        font-size: 2rem;
+        max-width: 300px;
+    }
+}
+
+
